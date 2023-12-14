@@ -56,6 +56,13 @@ let ImageService = class ImageService {
             return null;
         }
     }
+    async findAll() {
+        const imageList = await this.imageModel.find().exec();
+        if (!imageList) {
+            throw new common_1.NotFoundException('Could not find imageList.');
+        }
+        return imageList;
+    }
     async findByCondition(searchWord, curPage) {
         const pageSize = 6;
         let skip = curPage - 1;

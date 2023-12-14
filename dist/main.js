@@ -11,7 +11,7 @@ async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule, {
         cors: true,
     });
-    await app.listen(process.env.PORT || 3000);
+    await app.listen(process.env.PORT || 4000);
     await moralis_1.default.start({
         apiKey: 'Ij7DZmjJW7fTnSn3Co4XreZUQLxYJzfRZWtB6KdT3fxWpgBi20vLssWMp1M3CpiF'
     });

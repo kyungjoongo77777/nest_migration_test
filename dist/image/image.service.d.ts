@@ -8,5 +8,6 @@ export declare class ImageService {
     update(updateImageDto: UpdateImageDto, id: string): Promise<Image>;
     delete(id: string): Promise<any>;
     findById(id: string): Promise<Image>;
+    findAll(): Promise<Image[]>;
     findByCondition(searchWord: string, curPage: number): Promise<Image[]>;
 }

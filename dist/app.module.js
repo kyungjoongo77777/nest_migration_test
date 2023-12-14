@@ -14,6 +14,7 @@ const main_module_1 = require("./main/main.module");
 const constants_1 = require("./constants/constants");
 const schedule_1 = require("@nestjs/schedule");
 const image_module_1 = require("./image/image.module");
+const ChatGateway_1 = require("./chat/ChatGateway");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -27,6 +28,9 @@ AppModule = __decorate([
             main_module_1.MainModule,
             image_module_1.ImageModule,
             client_module_1.ClientModule,
+        ],
+        providers: [
+            ChatGateway_1.ChatGateway
         ]
     })
 ], AppModule);

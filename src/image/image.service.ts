@@ -49,13 +49,13 @@ export class ImageService {
         }
     }
 
-    /* async getClient(clientId: string) {
-         const client = await this.findById(clientId);
-         if (!client) {
-             throw new NotFoundException('Could not find client.');
-         }
-         return client;
-     }*/
+    async findAll() {
+        const imageList = await this.imageModel.find().exec()
+        if (!imageList) {
+            throw new NotFoundException('Could not find imageList.');
+        }
+        return imageList;
+    }
 
     async findByCondition(searchWord: string, curPage: number): Promise<Image[]> {
 

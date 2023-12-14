@@ -5,6 +5,7 @@ import {MainModule} from "./main/main.module";
 import {AWS_DEV_MONGODB_URI} from "./constants/constants";
 import {ScheduleModule} from "@nestjs/schedule";
 import {ImageModule} from "./image/image.module";
+import {ChatGateway} from "./chat/ChatGateway";
 
 
 @Module({
@@ -17,6 +18,9 @@ import {ImageModule} from "./image/image.module";
         MainModule,
         ImageModule,
         ClientModule,
+    ],
+    providers :[
+        ChatGateway
     ]
 })
 export class AppModule {

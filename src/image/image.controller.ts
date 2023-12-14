@@ -21,10 +21,10 @@ export class ImageController {
         return this.imageService.findByCondition(searchWord, page);
     }
 
-    // @Get("")
-    // async findImage(): Promise<Image[]> {
-    //     return this.imageService.findAll();
-    // }
+    @Get("")
+    async findImage(): Promise<Image[]> {
+        return this.imageService.findAll();
+    }
 
     @Delete('/:id')
     async delete(@Param('id') id) {

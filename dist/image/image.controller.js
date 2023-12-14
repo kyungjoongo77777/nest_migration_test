@@ -26,6 +26,9 @@ let ImageController = class ImageController {
     async findAll(searchWord, page) {
         return this.imageService.findByCondition(searchWord, page);
     }
+    async findImage() {
+        return this.imageService.findAll();
+    }
     async delete(id) {
         await this.imageService.delete(id);
     }
@@ -48,6 +51,12 @@ __decorate([
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], ImageController.prototype, "findAll", null);
+__decorate([
+    (0, common_1.Get)(""),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], ImageController.prototype, "findImage", null);
 __decorate([
     (0, common_1.Delete)('/:id'),
     __param(0, (0, common_1.Param)('id')),

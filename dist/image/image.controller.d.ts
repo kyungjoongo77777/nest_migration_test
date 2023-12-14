@@ -6,6 +6,7 @@ export declare class ImageController {
     constructor(imageService: ImageService);
     create(createArticleDto: CreateImageDto): Promise<void>;
     findAll(searchWord: any, page: any): Promise<Image[]>;
+    findImage(): Promise<Image[]>;
     delete(id: any): Promise<void>;
     update(updateClientDto: UpdateImageDto, id: any): Promise<Image>;
 }
