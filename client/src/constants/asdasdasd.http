@@ -1,0 +1,15 @@
+POST http://backendtest1-env.eba-hctve62g.ap-northeast-1.elasticbeanstalk.com/lotteries
+Content-Type: application/json
+
+{
+    "numbers": "sdlfksdlkflk"
+}
+
+###
+
+GET http://backendtest1-env.eba-hctve62g.ap-northeast-1.elasticbeanstalk.com/users
+Content-Type: application/json
+
+{}
+
+###

@@ -1,0 +1,20 @@
+POST http://localhost:3000/image
+Content-Type: application/json
+
+{
+    "imageLocation": "lkfglskfdlgkdfkglk",
+    "createdDate": "2023-12-01",
+    "isWarning": false,
+    "frameDesc": "kyungjoon ie genius 555555",
+    "frameEngDesc": "sdflgksdlfkglsdfkglskdlfgk",
+    "weaponType": "sdflgksdlfkglsdfkglskdlfgk",
+    "streamId" : "sdflgksdlfkglsdfkglskdlfgk",
+    "uid": "sdflgksdlfkglsdfkglskdlfgk"
+}
+
+###
+
+GET http://localhost:3000/image/kyungjoon/1
+Content-Type: application/json
+
+

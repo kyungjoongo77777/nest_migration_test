@@ -1,0 +1,60 @@
+POST http://localhost:3000/articles
+Content-Type: application/json
+
+{
+  "title": "테소트sdlfkdlfksldf",
+  "description": "",
+  "body": "sdlkgdflkg",
+  "createdAt": "sdlkgdflkg",
+  "author": "sdlkgdflkg"
+}
+
+###
+
+DELETE http://localhost:3000/articles/641184608d3df50d09b4b389
+Accept: application/json
+
+###
+
+PATCH http://localhost:3000/articles/641184d08d3df50d09b4b38a
+Content-Type: application/json
+
+{
+    "id" : "641184d08d3df50d09b4b38a",
+    "title": "kyungjoon3024953409503495039_9384598345",
+    "description": "kyungjoongogogogo777777",
+    "body": "kyungjoongogogogo777777"
+
+}
+
+###
+
+POST http://localhost:3000/client
+Content-Type: application/json
+
+{
+    "author": "sfdkglsfdkglskdfglk",
+    "age": "sfdkglsfdkglskdfglk",
+    "body": "sfdkglsfdkglskdfglk",
+    "createdAt": "1201"
+
+}
+
+###
+
+DELETE http://localhost:3000/clients/64118f99b8ff1314c73c6646
+
+{}
+
+###
+
+
+PUT http://localhost:3000/clients/64118faeb8ff1314c73c6647
+Content-Type: application/json
+
+{
+    "author": "kyungjoon__gogogogogogogo",
+    "age": "47",
+    "body": "고경준 천재님이십니ㅏㄷsdlfksdlkflsdkflksdf"
+
+}
