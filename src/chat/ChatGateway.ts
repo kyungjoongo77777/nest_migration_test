@@ -3,23 +3,25 @@ import {Server, Socket} from 'socket.io';
 
 @WebSocketGateway()
 export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
+
     @WebSocketServer()
     server: Server;
 
     handleConnection(client: Socket) {
         // Handle connection event
-        console.log("temp===eonnceted");console.log("temp===eonnceted");
-        console.log("temp===eonnceted");
+        console.log("temp===Connection");
+        console.log("temp===Connection");
 
     }
 
     handleDisconnect(client: Socket) {
         // Handle disconnection event
+        console.log("temp===Disconnect");
     }
 
     @SubscribeMessage('cctv1_current_frame_status')
     handleMessage_cctv1_current_frame_status(@MessageBody() body: string, @ConnectedSocket() client: Socket) {
-        console.log('cctv1_current_frame_status__message: ' + body);
+        console.log('cctv1_current_frame_status: ' + body);
 
         this.server.emit('cctv1_current_frame_status', {
             data: body,
